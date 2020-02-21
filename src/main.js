@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 // import axios from 'axios'
 // import qs from 'qs'
 // 设置反向代理
@@ -15,6 +17,7 @@ Vue.prototype.$axios = axios
 
 Vue.config.productionTip = false // 阻止vue 在启动时生成提示
 
+Vue.use(ElementUI)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
